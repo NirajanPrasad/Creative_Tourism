@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <PreLoader setLoading={setLoading} />
+      {loading && <PreLoader setLoading={setLoading} />}
       {!loading && (
         <main>
           <h1>Welcome To HomePage</h1>

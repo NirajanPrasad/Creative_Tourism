@@ -1,4 +1,9 @@
+body {
+  overflow: hidden;
+}
+
 .preloader_div {
+  font-size: 5.9vw;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -8,7 +13,6 @@
   position: relative;
 }
 .preloader_svg {
-  font-size: 96px;
   text-transform: uppercase;
 }
 
@@ -16,7 +20,7 @@
   overflow: hidden;
   /* pointer-events: none; */
   height: 15vh;
-  width: 20vw;
+  width: 100%;
 
   position: absolute;
   bottom: 0;
@@ -24,10 +28,19 @@
 
   display: flex;
   align-items: top;
-  font-size: 112px;
+  font-size: max(6vw, 68px);
+  /* font-size: 112px; */
 }
 
 .percentage {
   position: absolute;
-  left: 18%;
+  left: max(4%, 40px);
+}
+
+.counts {
+  display: flex;
+}
+
+.number {
+  display: block;
 }
