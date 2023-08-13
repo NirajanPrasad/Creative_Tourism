@@ -1,0 +1,33 @@
+.preloader_div {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+
+  position: relative;
+}
+.preloader_svg {
+  font-size: 96px;
+  text-transform: uppercase;
+}
+
+.preloader_counter {
+  overflow: hidden;
+  /* pointer-events: none; */
+  height: 15vh;
+  width: 20vw;
+
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+
+  display: flex;
+  align-items: top;
+  font-size: 112px;
+}
+
+.percentage {
+  position: absolute;
+  left: 18%;
+}
